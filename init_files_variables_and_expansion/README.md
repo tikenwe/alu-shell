@@ -1,1 +1,1 @@
-# Init files, variables and expansions
+Shell scripting project
