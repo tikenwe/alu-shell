@@ -1,1 +1,1 @@
-# alu-shell
+# Init files, variables and expansions
