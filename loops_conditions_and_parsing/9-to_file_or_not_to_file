@@ -1,18 +1,18 @@
-echo '#!/usr/bin/env bash' > 9-to_file_or_not_to_file
-echo '# This script gives information about the school file' >> 9-to_file_or_not_to_file
-echo 'if [ -e school ]' >> 9-to_file_or_not_to_file
-echo 'then' >> 9-to_file_or_not_to_file
-echo 'echo "school file exists"' >> 9-to_file_or_not_to_file
-echo 'if [ -s school ]' >> 9-to_file_or_not_to_file
-echo 'then' >> 9-to_file_or_not_to_file
-echo 'echo "school file is not empty"' >> 9-to_file_or_not_to_file
-echo 'else' >> 9-to_file_or_not_to_file
-echo 'echo "school file is empty"' >> 9-to_file_or_not_to_file
-echo 'fi' >> 9-to_file_or_not_to_file
-echo 'if [ -f school ]' >> 9-to_file_or_not_to_file
-echo 'then' >> 9-to_file_or_not_to_file
-echo 'echo "school is a regular file"' >> 9-to_file_or_not_to_file
-echo 'fi' >> 9-to_file_or_not_to_file
-echo 'else' >> 9-to_file_or_not_to_file
-echo 'echo "school file does not exist"' >> 9-to_file_or_not_to_file
-echo 'fi' >> 9-to_file_or_not_to_file
+#!/usr/bin/env bash
+# This script gives information about the school file
+if [ -e school ]
+then
+echo "school file exists"
+if [ -s school ]
+then
+echo "school file is not empty"
+else
+echo "school file is empty"
+fi
+if [ -f school ]
+then
+echo "school is a regular file"
+fi
+else
+echo "school file does not exist"
+fi
